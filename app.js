@@ -14,6 +14,12 @@ navLinks.forEach((link) => {
   });
 });
 
+const butonnn = document.querySelector('.header-button');
+
+butonnn.addEventListener('click', () => {
+    event.preventDefault(); 
+    const target = document.querySelector(butonnn.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
 
 const scrollTopBtn = document.querySelector('#scroll-top-btn');
 
