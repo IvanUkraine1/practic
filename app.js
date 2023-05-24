@@ -4,7 +4,6 @@ const history = document.querySelector('.history');
 const menu = document.querySelector('.menu');
 
 const navLinks = document.querySelectorAll('.nav-item');
-const headerLinks = document.querySelectorAll('.header-bth');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
@@ -15,14 +14,6 @@ navLinks.forEach((link) => {
   });
 });
 
-headerLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault(); 
-    const target = document.querySelector(link.getAttribute('href'));
-
-    target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
 
 const scrollTopBtn = document.querySelector('#scroll-top-btn');
 
